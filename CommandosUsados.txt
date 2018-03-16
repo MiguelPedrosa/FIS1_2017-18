@@ -30,7 +30,14 @@ Comandos importantes:
 			@return: expressao F na qual a variavel t foi substituida por x
 			exemplo: subst(t=3*x, 9*t^2) => 81x^2
 			
-
+	kill(a)
+			a: variavel previamente declarada
+			@return: boolean dependendo se a variavel foi destruida com sucesso
+			extra: usar 'all' como argumento apaga todas as variaveis anteriormente declaradas
+			
+	float(x)
+			x: variavel ou lista de variaveis
+			@return: variavel ou lista de variaveis de forma precisa
 			
 
 Outros comandos:
@@ -46,3 +53,7 @@ Outros comandos:
 		@return: membro esquerdo duma equacao
 		exemplo: rhs(t=3) => t
 					  rhs(45*v = 23*t) => 45*v
+	
+	assume(eq)
+		eq: equacao, inequacao ou lista contendo ambas
+		exemplo: assume(k>0) => quando k for usado em calculos, será assumido que é positivo
