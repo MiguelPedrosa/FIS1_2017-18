@@ -1,0 +1,48 @@
+Esta lista resulta dos comandos do Maxima que encontrei mais uteis para a resolucao de exercicios. Nao despensa a consulta da documentacao oficial http://maxima.sourceforge.net/docs/manual/maxima.html
+
+
+Comandos importantes:
+
+	diff(F, x)
+			F: expressao a derivar
+			x: variavel simples
+			@return: derivada da expressao F em ordem à variavel x
+	
+	integrate(F, x, x0, x1)
+	integrate(F, x)
+			F: expressao a integrar
+			x: variavel simples
+			x0, x1: Entrevalo de valores a derivar
+			@return: valor do integral da expressao F em ordem à variavel x no intervalo x0 a x1
+	
+	solve(eq, x)
+			eq: equacao a resolver. Tambem pode ser usada uma lista para multiplas equacoes
+			x: variavel a resolver. Tambem pode ser usada uma lista para multiplas variaveis
+			@return: lista de solucoes possiveis
+			exemplo: solve(x^2+2=11, x) => [x=-3, x=3]
+						  solve(2*x+5=11, x) => [x=3]
+						  solve([x+y=3, x-y=1], [x, y] => [x=2, y=1]
+			concelho: usar commando rhs para atribuir solucoes a variaveis
+			
+	subst(t=x, F)
+			t: variavel que vai ser substituida
+			x: variavel nova
+			@return: expressao F na qual a variavel t foi substituida por x
+			exemplo: subst(t=3*x, 9*t^2) => 81x^2
+			
+
+			
+
+Outros comandos:
+
+	rhs(eq) -'Right Hand Side'
+		eq: equacao de dois membros
+		@return: membro direito duma equacao
+		exemplo: rhs(t=3) => 3
+					  rhs(45*v = 23*t) => 23*t
+					  
+	lhs(eq) -'Light Hand Side'
+		eq: equacao de dois membros
+		@return: membro esquerdo duma equacao
+		exemplo: rhs(t=3) => t
+					  rhs(45*v = 23*t) => 45*v
