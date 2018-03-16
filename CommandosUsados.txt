@@ -17,21 +17,21 @@ Comandos importantes:
 		@return: cos(x)
 		concelho:
 			cos(y*%pi/180)
-					y: angulo em graus
+				y: angulo em graus
 						
 	sin(x)
 		x: angulo em radianos
 		@return: sin(x)
 		concelho:
 			sin(y*%pi/180)
-					y: angulo em graus
+				y: angulo em graus
 						
 	tan(x)
 		x: angulo em radianos
 		@return: tan(x)
 		concelho:
 			tan(y*%pi/180)
-					y: angulo em graus
+				y: angulo em graus
 						
 
 	diff(F, x)
@@ -51,8 +51,8 @@ Comandos importantes:
 		x: variavel a resolver. Tambem pode ser usada uma lista para multiplas variaveis
 		@return: lista de solucoes possiveis
 		exemplo: solve(x^2+2=11, x) => [x=-3, x=3]
-					  solve(2*x+5=11, x) => [x=3]
-					  solve([x+y=3, x-y=1], [x, y] => [x=2, y=1]
+			 solve(2*x+5=11, x) => [x=3]
+			 solve([x+y=3, x-y=1], [x, y] => [x=2, y=1]
 		concelho: usar commando rhs para atribuir solucoes a variaveis
 			
 	subst(t=x, F)
@@ -77,13 +77,13 @@ Outros comandos:
 		eq: equacao de dois membros
 		@return: membro direito duma equacao
 		exemplo: rhs(t=3) => 3
-					  rhs(45*v = 23*t) => 23*t
+			 rhs(45*v = 23*t) => 23*t
 					  
 	lhs(eq) -'Light Hand Side'
 		eq: equacao de dois membros
 		@return: membro esquerdo duma equacao
 		exemplo: rhs(t=3) => t
-					  rhs(45*v = 23*t) => 45*v
+			 rhs(45*v = 23*t) => 45*v
 	
 	assume(eq)
 		eq: equacao, inequacao ou lista contendo ambas
