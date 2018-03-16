@@ -1,7 +1,36 @@
 Esta lista resulta dos comandos do Maxima que encontrei mais uteis para a resolucao de exercicios. Nao despensa a consulta da documentacao oficial http://maxima.sourceforge.net/docs/manual/maxima.html
 
 
+Incognitas:
+	%pi
+			@return: valor de PI
+	%e
+			@return: valor do numero de Neper
+
+
 Comandos importantes:
+
+	cos(x)
+			x: angulo em radianos
+			@return: cos(x)
+			concelho:
+				cos(y*%pi/180)
+						y: angulo em graus
+						
+	sin(x)
+			x: angulo em radianos
+			@return: sin(x)
+			concelho:
+				sin(y*%pi/180)
+						y: angulo em graus
+						
+	tan(x)
+			x: angulo em radianos
+			@return: tan(x)
+			concelho:
+				tan(y*%pi/180)
+						y: angulo em graus
+						
 
 	diff(F, x)
 			F: expressao a derivar
