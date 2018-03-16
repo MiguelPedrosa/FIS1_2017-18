@@ -1,72 +1,74 @@
-Esta lista resulta dos comandos do Maxima que encontrei mais uteis para a resolucao de exercicios. Nao despensa a consulta da documentacao oficial http://maxima.sourceforge.net/docs/manual/maxima.html
+Esta lista resulta dos comandos do Maxima que encontrei mais uteis para a resolucao de exercicios. 
+Nao despensa a consulta da documentacao oficial http://maxima.sourceforge.net/docs/manual/maxima.html
 
 
 Incognitas:
 	%pi
-			@return: valor de PI
+		@return: valor de PI
+		
 	%e
-			@return: valor do numero de Neper
+		@return: valor do numero de Neper
 
 
 Comandos importantes:
 
 	cos(x)
-			x: angulo em radianos
-			@return: cos(x)
-			concelho:
-				cos(y*%pi/180)
-						y: angulo em graus
+		x: angulo em radianos
+		@return: cos(x)
+		concelho:
+			cos(y*%pi/180)
+					y: angulo em graus
 						
 	sin(x)
-			x: angulo em radianos
-			@return: sin(x)
-			concelho:
-				sin(y*%pi/180)
-						y: angulo em graus
+		x: angulo em radianos
+		@return: sin(x)
+		concelho:
+			sin(y*%pi/180)
+					y: angulo em graus
 						
 	tan(x)
-			x: angulo em radianos
-			@return: tan(x)
-			concelho:
-				tan(y*%pi/180)
-						y: angulo em graus
+		x: angulo em radianos
+		@return: tan(x)
+		concelho:
+			tan(y*%pi/180)
+					y: angulo em graus
 						
 
 	diff(F, x)
-			F: expressao a derivar
-			x: variavel simples
-			@return: derivada da expressao F em ordem à variavel x
+		F: expressao a derivar
+		x: variavel simples
+		@return: derivada da expressao F em ordem à variavel x
 	
 	integrate(F, x, x0, x1)
 	integrate(F, x)
-			F: expressao a integrar
-			x: variavel simples
-			x0, x1: Entrevalo de valores a derivar
-			@return: valor do integral da expressao F em ordem à variavel x no intervalo x0 a x1
+		F: expressao a integrar
+		x: variavel simples
+		x0, x1: Entrevalo de valores a derivar
+		@return: valor do integral da expressao F em ordem à variavel x no intervalo x0 a x1
 	
 	solve(eq, x)
-			eq: equacao a resolver. Tambem pode ser usada uma lista para multiplas equacoes
-			x: variavel a resolver. Tambem pode ser usada uma lista para multiplas variaveis
-			@return: lista de solucoes possiveis
-			exemplo: solve(x^2+2=11, x) => [x=-3, x=3]
-						  solve(2*x+5=11, x) => [x=3]
-						  solve([x+y=3, x-y=1], [x, y] => [x=2, y=1]
-			concelho: usar commando rhs para atribuir solucoes a variaveis
+		eq: equacao a resolver. Tambem pode ser usada uma lista para multiplas equacoes
+		x: variavel a resolver. Tambem pode ser usada uma lista para multiplas variaveis
+		@return: lista de solucoes possiveis
+		exemplo: solve(x^2+2=11, x) => [x=-3, x=3]
+					  solve(2*x+5=11, x) => [x=3]
+					  solve([x+y=3, x-y=1], [x, y] => [x=2, y=1]
+		concelho: usar commando rhs para atribuir solucoes a variaveis
 			
 	subst(t=x, F)
-			t: variavel que vai ser substituida
-			x: variavel nova
-			@return: expressao F na qual a variavel t foi substituida por x
-			exemplo: subst(t=3*x, 9*t^2) => 81x^2
+		t: variavel que vai ser substituida
+		x: variavel nova
+		@return: expressao F na qual a variavel t foi substituida por x
+		exemplo: subst(t=3*x, 9*t^2) => 81x^2
 			
 	kill(a)
-			a: variavel previamente declarada
-			@return: boolean dependendo se a variavel foi destruida com sucesso
-			extra: usar 'all' como argumento apaga todas as variaveis anteriormente declaradas
+		a: variavel previamente declarada
+		@return: boolean dependendo se a variavel foi destruida com sucesso
+		extra: usar 'all' como argumento apaga todas as variaveis anteriormente declaradas
 			
 	float(x)
-			x: variavel ou lista de variaveis
-			@return: variavel ou lista de variaveis de forma precisa
+		x: variavel ou lista de variaveis
+		@return: variavel ou lista de variaveis de forma precisa
 			
 
 Outros comandos:
